@@ -1,0 +1,23 @@
+{
+    "posts":[
+        {
+            "id": 00001,
+            "author": "dave",
+            "content": "this is my very first microblog post #kewl",
+            "comments": [
+                {
+                    "author": "susan",
+                    "comment": "cool, it's kinda like #twitter! omg",
+                    "date": "Date()"
+                },
+                {
+                    "author": "joe",
+                    "comment": "not really, lol",
+                    "date": "Date()"
+                }
+            ],
+            "tags": ["kewl", "twitter"],
+            "date": "Date()"
+        }
+    ]
+}
