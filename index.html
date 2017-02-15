@@ -10,7 +10,7 @@
 
     <div class="feed" ng-controller="MyController">
 
-        <div class="bubble post" ng-repeat="post in data.posts">
+        <div class="bubble post" ng-repeat="post in posts">
             <h3>{{ post.author }}</h3>
             <p>{{ post.content }}</p>
             <p>{{ post.date }}</p>
@@ -30,8 +30,8 @@
         function MyController($scope, $http){
 
             $http.get('./models/posts.json').then(function(response) {
-                $scope.data = response.data;
-                console.log($scope.data.posts);
+                $scope.posts = response.data;
+                console.log($scope.posts);
             })
         }
     

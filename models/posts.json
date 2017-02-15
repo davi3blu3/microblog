@@ -1,45 +1,60 @@
-{
-    "posts":[
-        {
-            "id": 100001,
-            "author": "dave",
-            "content": "this is my very first microblog post #kewl",
-            "comments": [
-                {
-                    "author": "susan",
-                    "comment": "cool, it's kinda like #twitter! omg",
-                    "date": "Date()"
+[
+    {
+        "author": {
+            "user_id" : ObjectId("58a3c3d68cdded5445cab3fc"),
+            "userName": "dave smith"
+        },
+        "content": "This is my very first microblog post! #kewl",
+        "comments": [
+            {
+                "author": {
+                    "user_id" : ObjectId("58a3c3d68cdded5445cab3fd"),
+                    "userName": "susan jones"
                 },
-                {
-                    "author": "joe",
-                    "comment": "not really, lol",
-                    "date": "Date()"
-                }
-            ],
-            "tags": ["kewl", "twitter"],
-            "date": "Feb 14, 2017"
+                "comment": "cool, it's kinda like #twitter! omg",
+                "date": "Date()"
+            },
+            {
+                "author": {
+                    "user_id" : ObjectId("58a3c3d68cdded5445cab3fe"),
+                    "userName": "joe mcqueen"
+                },
+                "comment": "not really, lol",
+                "date": "Date()"
+            }
+        ],
+        "tags": ["kewl", "twitter"],
+        "date": "Feb 14, 2017"
+    },
+    {
+        "id": 100002,
+        "author": {
+            "_id" : ObjectId("58a3c3d68cdded5445cab3ff"),
+            "userName": "jeannie matthews"
         },
-        {
-            "id": 100002,
-            "author": "joanna",
-            "content": "aw I wanted to be the first to post",
-            "comments": [
-                {
-                    "author": "dave",
-                    "comment": "haha #tooslow",
-                    "date": "Date()"
-                }
-            ],
-            "tags": ["second"],
-            "date": "Feb 14, 2017"
+        "content": "Awww I wanted to be the first to post",
+        "comments": [
+            {
+                "author": {
+                    "_id" : ObjectId("58a3c3d68cdded5445cab3fc"),
+                    "userName": "dave smith"
+                },
+                "comment": "haha #tooslow",
+                "date": "Date()"
+            }
+        ],
+        "tags": ["second"],
+        "date": "Feb 14, 2017"
+    },
+    {
+        "id": 100003,
+        "author": {
+            "_id" : ObjectId("58a3c3d68cdded5445cab400"),
+            "userName": "cosmo davidson"
         },
-        {
-            "id": 100003,
-            "author": "cosmo",
-            "content": "it's such a cutting edge microblog! Unbelieveable",
-            "comments": [],
-            "tags": [],
-            "date": "Feb 14, 2017"
-        }
-    ]
-}
+        "content": "It's such a cutting edge microblog! Unbelieveable",
+        "comments": [],
+        "tags": [],
+        "date": "Feb 14, 2017"
+    }
+]
