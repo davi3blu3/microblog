@@ -16,3 +16,7 @@
     color: black;
     border: 3px solid dimgrey;
 }
+
+.ng-cloak {
+    opacity: 0;
+}
