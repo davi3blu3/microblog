@@ -18,6 +18,28 @@
             ],
             "tags": ["kewl", "twitter"],
             "date": "Feb 14, 2017"
+        },
+        {
+            "id": 100002,
+            "author": "joanna",
+            "content": "aw I wanted to be the first to post",
+            "comments": [
+                {
+                    "author": "dave",
+                    "comment": "haha #tooslow",
+                    "date": "Date()"
+                }
+            ],
+            "tags": ["second"],
+            "date": "Feb 14, 2017"
+        },
+        {
+            "id": 100003,
+            "author": "cosmo",
+            "content": "it's such a cutting edge microblog! Unbelieveable",
+            "comments": [],
+            "tags": [],
+            "date": "Feb 14, 2017"
         }
     ]
 }
