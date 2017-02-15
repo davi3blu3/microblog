@@ -13,8 +13,10 @@ MongoClient.connect('mongodb://localhost:27017/microblog', function(err, db) {
         assert.notEqual(docs.length, 0);
 
         docs.forEach(function(doc) {
-            console.log(doc.author.userName + " posted on " + doc.date);
+            console.log(doc.author.userName + " said " + doc.content);
         })
-    })
+    });
+
+    db.close();
 
 })
