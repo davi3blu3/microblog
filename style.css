@@ -1,14 +1,61 @@
+body {
+    margin: 0;
+    background-color: #bfe6ec;
+}
+
+body.ng-cloak {
+    opacity: 0;
+}
+
+header {
+    background-color: orangered;
+    padding: 5px 25px;
+    width: 100%;
+    height: 80px;
+}
+
+.header-title {
+    color: #f9f8ed;
+}
+
+header nav {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+header nav button {
+    background-color: #f9f8ed;
+    color: orangered;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+}
+
 .bubble {
     margin: 0 auto;
     width: 60%;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 5px 20px;
 }
 
 .post {
-    background-color: darkblue;
-    color: white;
-    border: 3px solid deepskyblue;
+    background-color: #f9f8ed;
+    color: black;
+    margin-top: 10px
+}
+
+.post-author {
+    float: left;
+    color: orangered;
+}
+
+.post-date {
+    float: right;
+}
+
+.post-content {
+    clear: both;
 }
 
 .comment {
@@ -17,6 +64,3 @@
     border: 3px solid dimgrey;
 }
 
-.ng-cloak {
-    opacity: 0;
-}

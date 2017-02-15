@@ -1,14 +1,14 @@
 [
     {
         "author": {
-            "user_id" : ObjectId("58a3c3d68cdded5445cab3fc"),
+            "user_id" : "58a3c3d68cdded5445cab3fc",
             "userName": "dave smith"
         },
         "content": "This is my very first microblog post! #kewl",
         "comments": [
             {
                 "author": {
-                    "user_id" : ObjectId("58a3c3d68cdded5445cab3fd"),
+                    "user_id" : "58a3c3d68cdded5445cab3fd",
                     "userName": "susan jones"
                 },
                 "comment": "cool, it's kinda like #twitter! omg",
@@ -16,7 +16,7 @@
             },
             {
                 "author": {
-                    "user_id" : ObjectId("58a3c3d68cdded5445cab3fe"),
+                    "user_id" : "58a3c3d68cdded5445cab3fe",
                     "userName": "joe mcqueen"
                 },
                 "comment": "not really, lol",
@@ -29,14 +29,14 @@
     {
         "id": 100002,
         "author": {
-            "_id" : ObjectId("58a3c3d68cdded5445cab3ff"),
+            "_id" : "58a3c3d68cdded5445cab3ff",
             "userName": "jeannie matthews"
         },
         "content": "Awww I wanted to be the first to post",
         "comments": [
             {
                 "author": {
-                    "_id" : ObjectId("58a3c3d68cdded5445cab3fc"),
+                    "_id" : "58a3c3d68cdded5445cab3fc",
                     "userName": "dave smith"
                 },
                 "comment": "haha #tooslow",
@@ -49,7 +49,7 @@
     {
         "id": 100003,
         "author": {
-            "_id" : ObjectId("58a3c3d68cdded5445cab400"),
+            "_id" : "58a3c3d68cdded5445cab400",
             "userName": "cosmo davidson"
         },
         "content": "It's such a cutting edge microblog! Unbelieveable",
