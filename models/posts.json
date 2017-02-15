@@ -1,7 +1,7 @@
 {
     "posts":[
         {
-            "id": 00001,
+            "id": 100001,
             "author": "dave",
             "content": "this is my very first microblog post #kewl",
             "comments": [
