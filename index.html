@@ -5,16 +5,31 @@
     <title>twitClone</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="myApp">
     <h1>twitClone</h1>
 
-    <div class="bubble post">
-        <h3>dave</h3>
-        <p>this is my very first microblog post #kewl</p>
+    <div class="feed" ng-controller="MyController">
+
+        <div class="bubble post">
+            <h3>{{ name }}</h3>
+            <p>this is my very first microblog post #kewl</p>
+        </div>
+
+        <div class="bubble comment">
+            <h3>susan</h3>
+            <p>cool, it's kinda like #twitter! omg</p>
+        </div>
+        
     </div>
-    <div class="bubble comment">
-        <h3>susan</h3>
-        <p>cool, it's kinda like #twitter! omg</p>
-    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script type="text/javascript">
+        angular.module('myApp', []).controller('MyController', MyController);
+    
+        function MyController($scope){
+            $scope.name = 'Frederic F^@%ing Chopin';
+        }
+    
+    </script>
 </body>
 </html>
