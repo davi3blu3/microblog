@@ -7,24 +7,18 @@
         "content": "This is my very first microblog post! #kewl",
         "comments": [
             {
-                "author": {
-                    "user_id" : "58a3c3d68cdded5445cab3fd",
-                    "userName": "susan jones"
-                },
+                "userName": "susan jones",
                 "comment": "cool, it's kinda like #twitter! omg",
-                "date": "Date()"
+                "createdOn": "Date()"
             },
             {
-                "author": {
-                    "user_id" : "58a3c3d68cdded5445cab3fe",
-                    "userName": "joe mcqueen"
-                },
+                "userName": "joe mcqueen",
                 "comment": "not really, lol",
-                "date": "Date()"
+                "createdOn": "Date()"
             }
         ],
         "tags": ["kewl", "twitter"],
-        "date": "Feb 14, 2017"
+        "createdOn": "Feb 14, 2017"
     },
     {
         "id": 100002,
@@ -35,16 +29,13 @@
         "content": "Awww I wanted to be the first to post",
         "comments": [
             {
-                "author": {
-                    "_id" : "58a3c3d68cdded5445cab3fc",
-                    "userName": "dave smith"
-                },
+                "userName": "dave smith",
                 "comment": "haha #tooslow",
-                "date": "Date()"
+                "createdOn": "Date()"
             }
         ],
         "tags": ["second"],
-        "date": "Feb 14, 2017"
+        "createdOn": "Feb 14, 2017"
     },
     {
         "id": 100003,
@@ -55,6 +46,6 @@
         "content": "It's such a cutting edge microblog! Unbelieveable",
         "comments": [],
         "tags": [],
-        "date": "Feb 14, 2017"
+        "createdOn": "Feb 14, 2017"
     }
 ]

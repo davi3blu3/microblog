@@ -1,18 +1,35 @@
 var mongoose = require('mongoose');
 
-var postSchema = new mongoose.Schema({
-    author : {
-        userName : {
-            type : String,
-            required : true
-        },
+var commentSchema = new mongoose.Schema({
+    userName : {
+        type : String,
+        required : true
     },
-    content : {
+    comment : {
         type: String,
         required : true
     },
-    comment : [String],
-    tags : [String]
+    createdOn : {
+        type : Date,
+        "default" : Date.now 
+    }
+})
+
+var postSchema = new mongoose.Schema({
+    author : {
+        type: String,
+        required: true
+    },
+    content : {
+        type: String,
+        required: true
+    },
+    comments : [commentSchema],
+    tags : [String],
+    createdOn : {
+        type: Date,
+        "default" : Date.now
+    }
 });
 
 mongoose.model('Post', postSchema);
