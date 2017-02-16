@@ -31,3 +31,6 @@ process.once('SIGUSR2', function() {
         process.kill(process.pid, 'SIGUSR2');
     });
 });
+
+// BRING IN SCHEMAS AND MODELS
+require('./posts.model.js');
