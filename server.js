@@ -1,22 +1,32 @@
-var MongoClient = require('mongodb').MongoClient,
-    assert = require('assert');
+//require('./api.data.db.js');
+var express = require('express');
+var app = express();
+var path = require('path');
+var bodyParser = require('body-parser');
 
-MongoClient.connect('mongodb://localhost:27017/microblog', function(err, db) {
+//var routes = require('./api/routes');
 
-    assert.equal(err, null);
-    console.log('Connected to Mongo Database on 27017');
+// Define the port to listed on
+app.set('port', 3000);
 
-    var coll = 'posts';
-
-    db.collection(coll).find().toArray(function(err, docs) {
-        assert.equal(err, null);
-        assert.notEqual(docs.length, 0);
-
-        docs.forEach(function(doc) {
-            console.log(doc.author.userName + " said " + doc.content);
-        })
-    });
-
-    db.close();
-
+// Log every request
+app.use(function(req, res, next) {
+    console.log(req.method, req.url);
+    next();
 })
+
+// Set static directory
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
+// Enable parsing of post forms
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Configure routing
+//app.use('api', routes);
+
+// listen for requests
+var server = app.listen(app.get('port'), function() {
+    var port = server.address().port;
+    console.log('Server listening on port', port);
+});
