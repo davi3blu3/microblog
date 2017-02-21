@@ -1,6 +1,12 @@
+/*
+ *  yellow:     #fef14b
+ *  purple:     #5647a6
+ *  blue;       #5d93ff
+ */ 
+
 body {
     margin: 0;
-    background-color: #bfe6ec;
+    background-color: #5d93ff;
 }
 
 body.ng-cloak {
@@ -8,14 +14,14 @@ body.ng-cloak {
 }
 
 header {
-    background-color: orangered;
+    background-color: #5647a6;
     padding: 5px 25px;
     width: 100%;
     height: 80px;
 }
 
 .header-title {
-    color: #f9f8ed;
+    color: #fef14b;
 }
 
 header nav {
@@ -25,8 +31,8 @@ header nav {
 }
 
 header nav button {
-    background-color: #f9f8ed;
-    color: orangered;
+    background-color: #fef14b;
+    color: #5647a6;
     font-size: 18px;
     margin-left: 20px;
     padding: 10px;
@@ -40,14 +46,14 @@ header nav button {
 }
 
 .post {
-    background-color: #f9f8ed;
+    background-color: #fdfad5;
     color: black;
     margin-top: 10px
 }
 
 .post-author {
     float: left;
-    color: orangered;
+    color: #5647a6;
 }
 
 .post-date {
