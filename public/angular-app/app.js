@@ -5,13 +5,17 @@ angular.module('skeleTweet', ['ngRoute'])
 function config($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'angular-app/mainfeed.html',
+            templateUrl: 'angular-app/feed.html',
             controller: PostsController,
             controllerAs: 'vm'
         });
 }
 
-function PostsController() {
+function PostsController($http) {
     var vm = this;
     vm.title = 'SkeleTweet';
+
+    $http.get('/api/posts').then(function(response) {
+        console.log(response);
+    })
 }
