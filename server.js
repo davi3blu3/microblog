@@ -3,8 +3,10 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
+var mongoClient = require('mongodb').MongoClient;
+var dbUrl = 'mongodb://localhost:27017/microblog';
 
-//var routes = require('./api/routes');
+
 
 // Define the port to listed on
 app.set('port', 3000);
